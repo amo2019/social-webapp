@@ -1,0 +1,153 @@
+body {
+    background-color: rgb(24 26 27);
+  }
+
+  main::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  main::-webkit-scrollbar-track {
+    background: var(--blue-dark);
+  }
+  
+  main::-webkit-scrollbar-thumb {
+    background: var(--purple);
+  }
+  
+  
+  input {
+    line-height: 1.5;
+    width: 100%;
+    font-size: 1.5rem;
+    background: var(--gray-dark);
+    color: var(--white);
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    border-radius: 1rem;
+  }
+
+  .search {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    background-color: var(--blue-dark);
+    border: var(--blue-mid);
+    border-radius: 2%;
+    padding: .2rem .4rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: .2rem;
+    border: 1px solid var(--blue-dark);
+    border-radius: 5px;
+}
+
+button:hover {
+  background-color: var(--blue-mid);
+  color: var(--white);
+  border: 1px solid var(--blue-darker);
+}
+
+
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button;
+}
+button, select {
+  text-transform: none;
+}
+button, input {
+  overflow: visible;
+}
+button, input, optgroup, select, textarea {
+  margin: .2rem;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button {
+  border-radius: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+  @media (max-width: 520px) {
+    button {
+      font-size: .8rem;
+      padding: 4px 15px;
+      font-weight: bold;
+    }
+  }
+  
+  
+  button:disabled {
+    opacity: 0.8;
+    background-color: var(--blue-dark);
+    cursor: not-allowed;
+    border: dotted;
+    margin-top: 0.4rem;
+  }
+  
+  
+  .sign-in {
+    max-width: 400px;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+}
+  
+  
+  
+  
+  ul, li {
+    text-align: left;
+    list-style: none;
+  }
+  
+  p {
+    margin-bottom: 10px;
+    line-height: 24px;
+    border-radius: 15px;
+    position: relative;
+    color: var(--white);
+    text-align: center;
+    padding: .8rem;
+  }
+  
+  .comment {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sent {
+    flex-direction: row-reverse;
+  }
+  
+  .sent p {
+    color: var(--white);
+    background: var(--red);
+    align-self: flex-end;
+  }
+  .received p {
+    background: var(--blue-light);
+    color: black;
+  }
+  
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 2px 5px;
+  }
+  
